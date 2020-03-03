@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>add book</h1>
+      <form class="needs-validation" novalidate id="book-form" action="#">
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="title">Title</label>
+            <div class="input-group">
+              <input type="text" class="form-control" id="title" placeholder="zadaj title" required>
+              <div class="invalid-feedback">
+                zadaj title!
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="author">Author</label>
+            <div class="input-group">
+              <input type="text" class="form-control" id="author" placeholder="zadaj autora"
+                required>
+              <div class="invalid-feedback">
+                zadaj autora!
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="isbn">ISBN#</label>
+            <div class="input-group">
+              <input type="text" class="form-control" id="isbn" placeholder="zadaj ISBN" required>
+              <div class="invalid-feedback">
+                zadaj ISBN!
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn-primary mb-3" type="submit">SUBMIT</button>
+      </form>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Author</th>
+            <th scope="col">ISBN#</th>
+          </tr>
+        </thead>
+        <tbody id="book-list">
+        </tbody>
+      </table>
+      <button type="button" class="btn btn-danger" id="btn-delete">DELETE ALL BOOKS</button>
+      <script src="./main-es5.js"></script>
+      <!-- <script src="./main-es6.js"></script> -->
+    </div>
+  </body>
+
+</html>
