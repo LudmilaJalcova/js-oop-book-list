@@ -1,6 +1,6 @@
 # js-oop-book-list
 
-[Demo](https://ludmilajalcova.github.io/js-oop-book-list/)
+[Demo](https://ludmilaschlegelova.github.io/js-oop-book-list/)
 
 # About
 
